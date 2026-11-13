@@ -134,6 +134,7 @@
       <nav class="hidden lg:flex items-center gap-8 font-display text-xs uppercase tracking-wider font-semibold text-cement-300">
         <a href="#proyectos" class="hover:text-copper-400 transition-colors">Proyectos</a>
         <a href="#galeria" class="hover:text-copper-400 transition-colors">Galería de Obras</a>
+        <a href="#videos" class="hover:text-copper-400 transition-colors">Videos</a>
         <a href="#servicios" class="hover:text-copper-400 transition-colors">Servicios</a>
         <a href="#empresa" class="hover:text-copper-400 transition-colors">Quiénes Somos</a>
         <a href="#clientes" class="hover:text-copper-400 transition-colors">Clientes &amp; Experiencia</a>
@@ -905,6 +906,93 @@
       </div>
     </section>
 
+    
+    <!-- REGISTRO AUDIOVISUAL DE CAMPO (VIDEOS DE OBRA EN ACCIÓN) -->
+    <section class="py-24 border-b border-navy-border bg-navy-950 relative" id="videos">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-copper-500/10 border border-copper-500/30 text-copper-400 text-xs font-display uppercase tracking-widest font-bold mb-3">
+              <span class="material-symbols-outlined text-sm">videocam</span>
+              <span>Registro Audiovisual de Campo</span>
+            </div>
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Obras en Acción: Evidencia en Terreno
+            </h2>
+            <p class="text-cement-400 text-sm font-light mt-2 max-w-xl leading-relaxed">
+              Tomas directas de colado de concreto, montaje de encofrados técnicos y estructuras en altura fiscalizadas in situ por nuestra dirección técnica.
+            </p>
+          </div>
+          <span class="text-xs text-copper-400 font-display font-medium mt-4 md:mt-0 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">play_circle</span>
+            4 videos técnicos de campo
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Video 1: Sárraga Altura -->
+          <div class="corporate-panel rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="relative bg-black aspect-[4/5] overflow-hidden">
+              <video src="./assets/videos/video_estructura_altura.mp4" controls playsinline preload="metadata" poster="./assets/images/sarraga_altura.jpg" class="w-full h-full object-cover"></video>
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-display uppercase text-copper-400 font-bold tracking-wider block">Torre Residencial</span>
+              <h4 class="font-display text-sm font-bold text-white mt-1">Edificio Sárraga — Altura</h4>
+              <p class="text-xs text-cement-400 font-light mt-2 leading-relaxed">
+                Armado perimetral de columnas y control de aplomo en niveles superiores.
+              </p>
+            </div>
+          </div>
+
+          <!-- Video 2: Villa Morra Encofrado -->
+          <div class="corporate-panel rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="relative bg-black aspect-[4/5] overflow-hidden">
+              <video src="./assets/videos/video_encofrado_losa.mp4" controls playsinline preload="metadata" poster="./assets/images/villa_morra_obra.jpg" class="w-full h-full object-cover"></video>
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-display uppercase text-copper-400 font-bold tracking-wider block">Encofrado Técnico</span>
+              <h4 class="font-display text-sm font-bold text-white mt-1">Villa Morra — Encofrados</h4>
+              <p class="text-xs text-cement-400 font-light mt-2 leading-relaxed">
+                Nivelación de soleras y verificación de apuntalamiento previo a la carga.
+              </p>
+            </div>
+          </div>
+
+          <!-- Video 3: Campo Aguaray -->
+          <div class="corporate-panel rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="relative bg-black aspect-[4/5] overflow-hidden">
+              <video src="./assets/videos/video_nave_industrial.mp4" controls playsinline preload="metadata" poster="./assets/images/campo_aguara.jpg" class="w-full h-full object-cover"></video>
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-display uppercase text-copper-400 font-bold tracking-wider block">Agroindustria</span>
+              <h4 class="font-display text-sm font-bold text-white mt-1">Campo Aguaray — Galpones</h4>
+              <p class="text-xs text-cement-400 font-light mt-2 leading-relaxed">
+                Panorámica de naves industriales, bases de silos y pavimentos pesados.
+              </p>
+            </div>
+          </div>
+
+          <!-- Video 4: Vertido y Hormigonado -->
+          <div class="corporate-panel rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="relative bg-black aspect-[4/5] overflow-hidden">
+              <video src="./assets/videos/video_hormigonado_obra.mp4" controls playsinline preload="metadata" poster="./assets/images/punto_farma_1.jpg" class="w-full h-full object-cover"></video>
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-display uppercase text-copper-400 font-bold tracking-wider block">Hormigón Armado</span>
+              <h4 class="font-display text-sm font-bold text-white mt-1">Vertido &amp; Vibrado In Situ</h4>
+              <p class="text-xs text-cement-400 font-light mt-2 leading-relaxed">
+                Colado de concreto elaborado y compactación para eliminación de aire atrapado.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- 4. SERVICIOS ESPECIALIZADOS -->
     <section class="py-28 border-b border-navy-border relative" id="servicios">
       <div class="max-w-7xl mx-auto px-6">
@@ -1452,6 +1540,7 @@
           <ul class="space-y-2 font-display">
             <li><a href="#proyectos" class="hover:text-white transition-colors">Portfolio de Obras</a></li>
             <li><a href="#galeria" class="hover:text-white transition-colors">Registro Técnico Fotográfico</a></li>
+            <li><a href="#videos" class="hover:text-white transition-colors">Videos de Obra en Acción</a></li>
             <li><a href="#servicios" class="hover:text-white transition-colors">Servicios Técnicos</a></li>
             <li><a href="#empresa" class="hover:text-white transition-colors">Quiénes Somos</a></li>
             <li><a href="#clientes" class="hover:text-white transition-colors">Clientes &amp; Experiencia</a></li>
