@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E.D.G. Construcción | Obras Civiles, Públicas & Tinglados en Paraguay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            noir: {
+              950: "#060709",
+              900: "#0a0c10",
+              850: "#101318",
+              800: "#151921",
+              700: "#222733",
+              border: "rgba(255, 255, 255, 0.08)",
+              borderLight: "rgba(255, 255, 255, 0.16)",
+              silver: "#d4d8e0",
+              muted: "#8891a0"
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            serif: ['"Cinzel"', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #060709;
+      color: #f1f3f7;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .grid-lines {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .glass-panel {
+      background: rgba(16, 19, 24, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-panel:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+    .logo-glow {
+      filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.1));
+    }
+  </style>
+</head>
+<body class="bg-noir-950 text-slate-100 antialiased selection:bg-white selection:text-black">
+
+  <!-- TOP BAR -->
+  <div class="hidden lg:block bg-noir-900 border-b border-noir-border py-2 text-[11px] text-noir-muted">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-xs text-white">location_on</span>
+          11 de Setiembre c/ Isla Po'i, Fernando de la Mora, Paraguay
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-xs text-white">verified</span>
+          RUC: 5348627-7 · Empresa Constructora
+        </span>
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-xs text-emerald-400">engineering</span>
+          Supervisión Técnica: Ing. Civil Aracely Bericua
+        </span>
+        <a href="tel:0981353858" class="text-white hover:underline font-semibold flex items-center gap-1">
+          <span class="material-symbols-outlined text-xs">call</span>
+          (0981) 353 858
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER (LOGO CENTRADO GRANDE) -->
+  <header class="sticky top-0 z-50 bg-noir-950/95 backdrop-blur-xl border-b border-noir-border">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 min-h-[130px] flex items-center justify-between">
+      
+      <!-- Navegación Izquierda -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.2em] text-noir-muted font-medium">
+        <a href="#especialidades" class="hover:text-white transition-colors">Especialidades</a>
+        <a href="#tinglados" class="hover:text-white transition-colors">Tinglados</a>
+        <a href="#obras" class="hover:text-white transition-colors">Obras</a>
+      </nav>
+
+      <!-- LOGO CENTRADO ARQUITECTÓNICO VECTORIAL (PROMINENTE) -->
+      <a href="#" class="flex flex-col items-center group py-2">
+        <div class="flex items-center justify-center logo-glow transition-transform group-hover:scale-105">
+          <!-- Icono Arquitectónico SVG Fiel al Logo Original (Escalado) -->
+          <svg class="h-14 sm:h-18 md:h-24 w-auto text-white" viewBox="0 0 120 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bloque superior izquierdo -->
+            <rect x="24" y="2" width="32" height="24" fill="currentColor" opacity="0.95" />
+            <!-- Bloque superior derecho central -->
+            <rect x="46" y="8" width="46" height="30" fill="currentColor" opacity="0.85" />
+            <!-- Bloque central voladizo -->
+            <rect x="2" y="22" width="76" height="10" fill="currentColor" />
+            <!-- Bloque inferior izquierdo masa -->
+            <rect x="6" y="32" width="20" height="20" fill="currentColor" />
+            <!-- Vano y marco central con cuadrícula de ventana -->
+            <rect x="58" y="28" width="16" height="20" fill="none" stroke="currentColor" stroke-width="2" />
+            <line x1="66" y1="28" x2="66" y2="48" stroke="currentColor" stroke-width="1.5" />
+            <line x1="58" y1="38" x2="74" y2="38" stroke="currentColor" stroke-width="1.5" />
+            <!-- Masa lateral derecha y pilar estructural -->
+            <path d="M68 36 H106 V44 H88 V54 H68 Z" fill="currentColor" />
+            <rect x="94" y="44" width="6" height="10" fill="currentColor" opacity="0.9" />
+          </svg>
+        </div>
+        <div class="text-center mt-2.5">
+          <div class="font-serif tracking-[0.4em] text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-none">E . D . G</div>
+          <div class="text-[11px] sm:text-xs md:text-sm uppercase tracking-[0.6em] text-noir-silver font-semibold mt-1">CONSTRUCCIÓN</div>
+        </div>
+      </a>
+
+      <!-- Navegación Derecha + CTA -->
+      <div class="flex items-center gap-6">
+        <nav class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.2em] text-noir-muted font-medium">
+          <a href="#tecnica" class="hover:text-white transition-colors">Supervisión</a>
+          <a href="#empresa" class="hover:text-white transition-colors">Empresa</a>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=595981353858&text=Hola%20Esteban%2C%20me%20comunico%20para%20cotizar%20un%20proyecto%20con%20E.D.G.%20Construcci%C3%B3n" target="_blank" class="px-5 py-3 rounded bg-white text-black hover:bg-noir-silver font-display text-xs uppercase tracking-wider font-bold transition-all flex items-center gap-2 shadow-[0_0_25px_rgba(255,255,255,0.15)]">
+          <span class="material-symbols-outlined text-sm">chat</span>
+          <span class="hidden sm:inline">Cotizar por WhatsApp</span>
+          <span class="sm:hidden">Cotizar</span>
+        </a>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- HERO CINEMÁTICO: ARQUITECTURA MODERNA COMO EL LOGO -->
+  <section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden border-b border-noir-border">
+    <!-- Background de Arquitectura Moderna Escultórica inspirada en el Logo -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=85" alt="Arquitectura moderna y obras civiles E.D.G. Construcción" class="w-full h-full object-cover object-center filter brightness-[0.55] contrast-110 scale-100" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/75"></div>
+      <div class="absolute inset-0 bg-radial-gradient from-transparent via-black/30 to-black/80"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-28 flex flex-col items-center text-center">
+      
+      <!-- EMPRESA CONSTRUCTORA DESTACADA Y GRANDE -->
+      <div class="flex flex-col items-center mb-6">
+        <div class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full border border-white/25 bg-black/80 backdrop-blur-xl mb-3 shadow-[0_0_30px_rgba(255,255,255,0.12)]">
+          <span class="h-2.5 w-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="text-sm sm:text-base md:text-lg uppercase tracking-[0.35em] text-white font-extrabold">EMPRESA CONSTRUCTORA</span>
+        </div>
+        <span class="text-xs sm:text-sm uppercase tracking-[0.25em] text-slate-300 font-medium">Habilitada en la República del Paraguay · RUC: 5348627-7</span>
+      </div>
+
+      <!-- Título Principal con Autoridad Constructiva -->
+      <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white max-w-5xl leading-[1.08] mb-8 drop-shadow-lg">
+        Solidez Estructural en<br/>
+        <span class="text-slate-300 font-normal">Obras Civiles, Públicas &amp; Tinglados</span>
+      </h1>
+
+      <!-- Párrafo Descriptivo -->
+      <p class="text-base sm:text-lg text-slate-200 max-w-3xl font-light leading-relaxed mb-10 drop-shadow">
+        Ejecución técnica de infraestructuras, naves logísticas, tinglados de gran porte y proyectos civiles con cálculo de ingeniería certificado. Conducción general de <strong class="text-white font-medium">Esteban Dávalos González</strong> y fiscalización profesional de la <strong class="text-white font-medium">Ing. Civil Aracely Bericua</strong>.
+      </p>
+
+        <!-- Botones de Acción -->
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="https://api.whatsapp.com/send?phone=595981353858&text=Hola%20Esteban%2C%20solicito%20presupuesto%20para%20un%20proyecto%20con%20E.D.G.%20Construcci%C3%B3n" target="_blank" class="px-8 py-4 rounded bg-white text-black hover:bg-slate-200 font-display text-xs uppercase tracking-[0.16em] font-bold transition-all shadow-[0_0_35px_rgba(255,255,255,0.15)] flex items-center gap-2">
+            <span>Solicitar Cotización de Obra</span>
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </a>
+          <a href="#tinglados" class="px-8 py-4 rounded bg-noir-850/90 hover:bg-noir-800 border border-noir-border text-white font-display text-xs uppercase tracking-[0.16em] font-medium transition-all flex items-center gap-2">
+            <span>Ver Naves &amp; Tinglados</span>
+          </a>
+        </div>
+
+        <!-- Tira de Cifras y Credenciales de Empresa Paraguaya -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-5xl mt-20 pt-10 border-t border-noir-border">
+          <div class="flex flex-col items-center">
+            <span class="font-display text-3xl md:text-4xl font-bold text-white">Rigor Técnico</span>
+            <span class="text-xs uppercase tracking-wider text-noir-muted mt-1">Supervisión In Situ</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="font-display text-3xl md:text-4xl font-bold text-white">Naves &amp; Galpones</span>
+            <span class="text-xs uppercase tracking-wider text-noir-muted mt-1">Estructuras Metálicas</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="font-display text-3xl md:text-4xl font-bold text-white">Sector Público</span>
+            <span class="text-xs uppercase tracking-wider text-noir-muted mt-1">&amp; Privado en Paraguay</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="font-display text-3xl md:text-4xl font-bold text-white">RUC 5348627-7</span>
+            <span class="text-xs uppercase tracking-wider text-noir-muted mt-1">Habilitación Legal</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ESPECIALIDADES OPERATIVAS CON FOTOS REALES -->
+    <section class="py-24 border-b border-noir-border relative" id="especialidades">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <span class="text-xs uppercase tracking-[0.3em] text-noir-muted font-semibold">Divisiones de Obra</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">
+              Ingeniería y Capacidad de Ejecución
+            </h2>
+          </div>
+          <p class="text-noir-muted max-w-md text-sm font-light leading-relaxed">
+            E.D.G. Construcción integra mano de obra especializada, equipamiento propio y control de materiales para proyectos en todo el territorio nacional.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Tinglados y Estructuras -->
+          <div class="glass-panel rounded-xl overflow-hidden flex flex-col group">
+            <div class="h-60 w-full overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Tinglado industrial y nave logística" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-850 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 bg-noir-950/80 backdrop-blur-md rounded text-[10px] uppercase tracking-widest text-white font-semibold">
+                Especialidad Destacada
+              </span>
+            </div>
+            <div class="p-8 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Estructuras Pesadas</span>
+                <h3 class="font-display text-2xl font-bold text-white mt-1 mb-3">Tinglados &amp; Naves Logísticas</h3>
+                <p class="text-sm text-noir-muted font-light leading-relaxed">
+                  Cálculo, armado y montaje de tinglados industriales de gran luz libre. Estructuras metálicas reticuladas, pórticos de alma llena y cubiertas autoportantes para fábricas, depósitos y centros de distribución.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-noir-border mt-8 flex items-center justify-between text-xs text-noir-silver">
+                <span>Perfiles de acero normalizado</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Obras Públicas e Infraestructura -->
+          <div class="glass-panel rounded-xl overflow-hidden flex flex-col group">
+            <div class="h-60 w-full overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1000&q=80" alt="Obras públicas y hormigón armado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-850 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 bg-noir-950/80 backdrop-blur-md rounded text-[10px] uppercase tracking-widest text-white font-semibold">
+                Sector Público
+              </span>
+            </div>
+            <div class="p-8 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Infraestructura Urbana</span>
+                <h3 class="font-display text-2xl font-bold text-white mt-1 mb-3">Obras Civiles &amp; Licitaciones</h3>
+                <p class="text-sm text-noir-muted font-light leading-relaxed">
+                  Capacidad técnica y respaldo administrativo para obras públicas: canalizaciones pluviales, pavimentación, muros de contención, edificios institucionales y proyectos de desarrollo comunitario.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-noir-border mt-8 flex items-center justify-between text-xs text-noir-silver">
+                <span>Apego estricto a pliegos técnicos</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Obras Comerciales y Privadas -->
+          <div class="glass-panel rounded-xl overflow-hidden flex flex-col group">
+            <div class="h-60 w-full overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80" alt="Construcción comercial y privada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-850 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 bg-noir-950/80 backdrop-blur-md rounded text-[10px] uppercase tracking-widest text-white font-semibold">
+                Sector Privado
+              </span>
+            </div>
+            <div class="p-8 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Desarrollos Llave en Mano</span>
+                <h3 class="font-display text-2xl font-bold text-white mt-1 mb-3">Edificaciones Privadas &amp; Comerciales</h3>
+                <p class="text-sm text-noir-muted font-light leading-relaxed">
+                  Construcción integral de sedes corporativas, locales comerciales, residencias de categoría y refacciones de gran volumen con terminaciones de alta gama y gestión de plazos garantizada.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-noir-border mt-8 flex items-center justify-between text-xs text-noir-silver">
+                <span>Entrega llave en mano</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN ESPECIAL TINGLADOS Y GALPONES (SOLUCIÓN CLAVE) -->
+    <section class="py-24 border-b border-noir-border bg-noir-900/50 relative" id="tinglados">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 flex flex-col gap-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10 w-fit text-xs uppercase tracking-widest text-noir-silver">
+              <span class="material-symbols-outlined text-base">precision_manufacturing</span>
+              <span>División Tinglados &amp; Estructuras de Acero</span>
+            </div>
+
+            <h2 class="font-display text-3xl sm:text-5xl font-bold text-white leading-tight">
+              Ingeniería de Tinglados de Gran Porte para la Industria
+            </h2>
+
+            <p class="text-noir-muted text-base font-light leading-relaxed">
+              En Paraguay, las naves industriales y tinglados demandan precisión en el cálculo de fundaciones, arriostramientos y resistencia a tormentas severas. En <strong class="text-white font-medium">E.D.G. Construcción</strong> proyectamos y montamos estructuras metálicas robustas con perfiles certificados y chapas de alta densidad.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-lg bg-noir-850 border border-noir-border flex items-start gap-3">
+                <span class="material-symbols-outlined text-white text-xl mt-0.5">straighten</span>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Grandes Luces Libres</h4>
+                  <p class="text-xs text-noir-muted mt-1">Espacios despejados sin columnas intermedias para maniobra de camiones y logística.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-lg bg-noir-850 border border-noir-border flex items-start gap-3">
+                <span class="material-symbols-outlined text-white text-xl mt-0.5">foundation</span>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Pisos de Alto Tránsito</h4>
+                  <p class="text-xs text-noir-muted mt-1">Plateas de hormigón armado alisado mecánico preparadas para montacargas y maquinaria pesada.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-lg bg-noir-850 border border-noir-border flex items-start gap-3">
+                <span class="material-symbols-outlined text-white text-xl mt-0.5">roofing</span>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Cubiertas Térmicas</h4>
+                  <p class="text-xs text-noir-muted mt-1">Aislación térmica con paneles sándwich o lana de vidrio para proteger mercaderías del calor extremo.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-lg bg-noir-850 border border-noir-border flex items-start gap-3">
+                <span class="material-symbols-outlined text-white text-xl mt-0.5">timer</span>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Montaje Acelerado</h4>
+                  <p class="text-xs text-noir-muted mt-1">Fabricación previa en taller y ensamblaje rápido in situ para cumplir fechas perentorias.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="https://api.whatsapp.com/send?phone=595981353858&text=Hola%20Esteban%2C%20quiero%20cotizar%20un%20tinglado%20o%20nave%20industrial%20con%20E.D.G.%20Construcci%C3%B3n" target="_blank" class="px-8 py-3.5 rounded bg-white text-black hover:bg-slate-200 font-display text-xs uppercase tracking-wider font-bold transition-all inline-flex items-center gap-2">
+                <span>Cotizar Tinglado con Esteban Dávalos</span>
+                <span class="material-symbols-outlined text-base">chat</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-2xl overflow-hidden border border-noir-borderLight shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Montaje de estructura de tinglado industrial" class="w-full h-[520px] object-cover filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-noir-950/85 backdrop-blur-xl border border-white/10">
+                <span class="text-[10px] uppercase tracking-widest text-emerald-400 font-bold block mb-1">Fiscalización Estructural</span>
+                <p class="text-sm text-white font-medium">
+                  "Todo tinglado debe responder a un cálculo de esfuerzos riguroso: viento, anclaje químico y resistencia de soldaduras. Sin improvisación."
+                </p>
+                <span class="text-xs text-noir-muted block mt-2">— Supervisión Técnica de Obras · E.D.G. Construcción</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+                <!-- GALERÍA DE OBRAS REALES Y TRAYECTORIA COMPROBADA -->
+    <section class="py-24 border-b border-noir-border" id="obras">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10 text-xs uppercase tracking-widest text-noir-silver mb-3">
+              <span class="material-symbols-outlined text-sm text-emerald-400">verified</span>
+              <span>Portafolio Oficial de Obras</span>
+            </div>
+            <h2 class="font-display text-3xl sm:text-5xl font-bold text-white leading-tight">
+              Obras Ejecutadas &amp; Trayectoria Comprobada
+            </h2>
+          </div>
+          <p class="text-noir-muted max-w-md text-sm font-light leading-relaxed">
+            Estructuras de hormigón armado, naves industriales y desarrollos civiles contratados por las principales empresas del sector.
+          </p>
+        </div>
+
+        <!-- Grid de las 7 Obras Reales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Obra 1: HORMETAL PARAGUAY -->
+          <div class="glass-panel rounded-2xl overflow-hidden flex flex-col group border-white/15">
+            <div class="h-64 overflow-hidden relative bg-noir-900">
+              <img src="./assets/images/hormetal_tabique.jpg" alt="Tabiques de hormigón armado y muros de contención para Hormetal Paraguay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-white font-bold">
+                  Muros &amp; Tabiques Pesados
+                </span>
+                <span class="px-2.5 py-1 bg-emerald-950/90 backdrop-blur-md border border-emerald-500/30 rounded text-[10px] uppercase tracking-widest text-emerald-300 font-bold">
+                  Para: Hormetal Paraguay
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 text-[11px] text-noir-silver bg-black/70 px-2 py-0.5 rounded backdrop-blur">
+                Paraguay
+              </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Infraestructura Industrial &amp; Logística</span>
+                <h4 class="font-display text-xl font-bold text-white mt-1">Muros de Contención &amp; Tabiques</h4>
+                <p class="text-xs text-noir-muted mt-2 font-light leading-relaxed">
+                  Servicio especializado de armado de armaduras y encofrados para tabiques de hormigón y muros de contención de gran porte ejecutados para <strong>Hormetal Paraguay</strong>.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-noir-border mt-6 flex items-center justify-between text-xs text-noir-silver">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                  <span class="material-symbols-outlined text-sm">check_circle</span>
+                  <span>Estructuras Pesadas en Hormigón</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obra 2: PUNTO FARMA ÑEMBY (TECINCI) -->
+          <div class="glass-panel rounded-2xl overflow-hidden flex flex-col group border-white/15">
+            <div class="h-64 overflow-hidden relative bg-noir-900">
+              <img src="./assets/images/punto_farma_casetonado.jpg" alt="Losa casetonada Punto Farma Ñemby 2500 m2 para Tecinci SA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-white font-bold">
+                  2.500 m² Losa Casetonada
+                </span>
+                <span class="px-2.5 py-1 bg-emerald-950/90 backdrop-blur-md border border-emerald-500/30 rounded text-[10px] uppercase tracking-widest text-emerald-300 font-bold">
+                  Para: Tecinci SA
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 text-[11px] text-noir-silver bg-black/70 px-2 py-0.5 rounded backdrop-blur">
+                Ñemby · Central
+              </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Gran Porte Logístico</span>
+                <h4 class="font-display text-xl font-bold text-white mt-1">Centro Logístico Punto Farma</h4>
+                <p class="text-xs text-noir-muted mt-2 font-light leading-relaxed">
+                  Construcción de 2.500 m² de losa casetonada alivianada para el centro logístico Punto Farma en Ñemby, contratado por la empresa <strong>Tecinci S.A.</strong>
+                </p>
+              </div>
+              <div class="pt-4 border-t border-noir-border mt-6 flex items-center justify-between text-xs text-noir-silver">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                  <span class="material-symbols-outlined text-sm">check_circle</span>
+                  <span>Ingeniería Estructural Avanzada</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obra 3: VILLA MORRA RESTAURANTE (EMPROPAR SA) -->
+          <div class="glass-panel rounded-2xl overflow-hidden flex flex-col group border-white/15">
+            <div class="h-64 overflow-hidden relative bg-noir-900">
+              <img src="./assets/images/villa_morra_obra.jpg" alt="Local gastronómico en Villa Morra para Empropar SA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-white font-bold">
+                  Obra Comercial &amp; Gastronómica
+                </span>
+                <span class="px-2.5 py-1 bg-emerald-950/90 backdrop-blur-md border border-emerald-500/30 rounded text-[10px] uppercase tracking-widest text-emerald-300 font-bold">
+                  Para: Empropar SA
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 text-[11px] text-noir-silver bg-black/70 px-2 py-0.5 rounded backdrop-blur">
+                Malutín · Villa Morra
+              </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Sector Comercial Privado</span>
+                <h4 class="font-display text-xl font-bold text-white mt-1">Complejo Gastronómico Villa Morra</h4>
+                <p class="text-xs text-noir-muted mt-2 font-light leading-relaxed">
+                  Construcción de edificio comercial en calle Malutín para restaurante de categoría, ejecutado para <strong>Empropar S.A.</strong> con estructura de hormigón armado y pórticos reforzados.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-noir-border mt-6 flex items-center justify-between text-xs text-noir-silver">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                  <span class="material-symbols-outlined text-sm">check_circle</span>
+                  <span>Asunción · Eje Corporativo</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obra 4: CASAS EN COUNTRY (OBRA GRIS CON MOLDURAS) -->
+          <div class="glass-panel rounded-2xl overflow-hidden flex flex-col group border-white/15">
+            <div class="h-64 overflow-hidden relative bg-noir-900">
+              <img src="./assets/images/country_obra_gris.jpg" alt="Residencias en country y barrios cerrados obra gris con molduras" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-white font-bold">
+                  Residencias de Categoría
+                </span>
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-noir-silver font-semibold">
+                  Obra Gris con Molduras
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 text-[11px] text-noir-silver bg-black/70 px-2 py-0.5 rounded backdrop-blur">
+                Countries &amp; Barrios Cerrados
+              </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Arquitectura Residencial</span>
+                <h4 class="font-display text-xl font-bold text-white mt-1">Viviendas Unifamiliares en Barrios Privados</h4>
+                <p class="text-xs text-noir-muted mt-2 font-light leading-relaxed">
+                  Construcción completa de obra gris con molduras arquitectónicas, losas vistas, encadenados y mampostería en countries y barrios cerrados de la provincia de Buenos Aires.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-noir-border mt-6 flex items-center justify-between text-xs text-noir-silver">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                  <span class="material-symbols-outlined text-sm">check_circle</span>
+                  <span>Terminaciones &amp; Molduras Finas</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obra 5: PLAN PROCREAR (SAN ANTONIO DE ARECO) -->
+          <div class="glass-panel rounded-2xl overflow-hidden flex flex-col group border-white/15">
+            <div class="h-64 overflow-hidden relative bg-noir-900">
+              <img src="./assets/images/procrear_encofrados.jpg" alt="Complejo habitacional Procrear San Antonio de Areco encofrados" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-white font-bold">
+                  Desarrollo Habitacional
+                </span>
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-noir-silver font-semibold">
+                  Obra Pública Institucional
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 text-[11px] text-noir-silver bg-black/70 px-2 py-0.5 rounded backdrop-blur">
+                San Antonio de Areco
+              </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Infraestructura y Vivienda</span>
+                <h4 class="font-display text-xl font-bold text-white mt-1">Desarrollo Urbanístico Procrear</h4>
+                <p class="text-xs text-noir-muted mt-2 font-light leading-relaxed">
+                  Montaje de sistemas de encofrado modular trepante, vigas perimetrales y llenado de hormigón para conjunto habitacional multifamiliar de escala pública en San Antonio de Areco.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-noir-border mt-6 flex items-center justify-between text-xs text-noir-silver">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                  <span class="material-symbols-outlined text-sm">check_circle</span>
+                  <span>Encofrados Modulares Pesados</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obra 6: EDIFICIO SÁRRAGA (VILLA ORTÚZAR) -->
+          <div class="glass-panel rounded-2xl overflow-hidden flex flex-col group border-white/15">
+            <div class="h-64 overflow-hidden relative bg-noir-900">
+              <img src="./assets/images/sarraga_altura.jpg" alt="Edificio residencial Sárraga en Villa Ortúzar en altura" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-white font-bold">
+                  Edificación en Altura
+                </span>
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-noir-silver font-semibold">
+                  Hormigón Visto
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 text-[11px] text-noir-silver bg-black/70 px-2 py-0.5 rounded backdrop-blur">
+                Villa Ortúzar · CABA
+              </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Edificación Residencial Urbana</span>
+                <h4 class="font-display text-xl font-bold text-white mt-1">Edificio Sárraga · Obra en Altura</h4>
+                <p class="text-xs text-noir-muted mt-2 font-light leading-relaxed">
+                  Estructura monolítica de hormigón armado en altura, balcones en voladizo, cajas de ascensores y escaleras técnicas para edificio residencial de vivienda multifamiliar.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-noir-border mt-6 flex items-center justify-between text-xs text-noir-silver">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                  <span class="material-symbols-outlined text-sm">check_circle</span>
+                  <span>Estructura Monolítica en Altura</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obra 7: CAMPO AGUARÁ (LINCOLN) -->
+          <div class="glass-panel rounded-2xl overflow-hidden flex flex-col group border-white/15">
+            <div class="h-64 overflow-hidden relative bg-noir-900">
+              <img src="./assets/images/campo_aguara.jpg" alt="Instalaciones de campo y losas vistas Lincoln" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-noir-950/90 backdrop-blur-md border border-white/15 rounded text-[10px] uppercase tracking-widest text-white font-bold">
+                  Infraestructura Rural
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 text-[11px] text-noir-silver bg-black/70 px-2 py-0.5 rounded backdrop-blur">
+                Lincoln · Pcia. BA
+              </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-noir-muted font-semibold">Sector Agroindustrial</span>
+                <h4 class="font-display text-xl font-bold text-white mt-1">Establecimiento Campo Aguará</h4>
+                <p class="text-xs text-noir-muted mt-2 font-light leading-relaxed">
+                  Construcción de galerías y plateas de hormigón en voladizo, naves de almacenaje agrícola, fundaciones y estructuras de servicio para establecimiento agropecuario en Lincoln.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-noir-border mt-6 flex items-center justify-between text-xs text-noir-silver">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                  <span class="material-symbols-outlined text-sm">check_circle</span>
+                  <span>Plateas &amp; Losas de Campo</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESPALDO TÉCNICO Y SUPERVISIÓN PROFESIONAL -->
+    <section class="py-24 border-b border-noir-border bg-noir-900/40 relative" id="tecnica">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-xs uppercase tracking-[0.3em] text-noir-muted font-semibold">Garantía Estructural</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">
+            Supervisión Técnica y Fiscalización en Terreno
+          </h2>
+          <p class="text-noir-muted text-sm mt-3 font-light leading-relaxed">
+            Una constructora seria se define por el control in situ. Cada metro cúbico de hormigón y cada soldadura en tinglados responde a una supervisión profesional directa.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          
+          <!-- LIDERAZGO COMERCIAL Y GENERAL: ESTEBAN DÁVALOS -->
+          <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between border-white/10">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="h-14 w-14 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white">
+                  <span class="material-symbols-outlined text-3xl">manage_accounts</span>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-noir-silver font-bold">Dirección General &amp; Contrataciones</span>
+                  <h3 class="font-display text-2xl font-bold text-white">Esteban Dávalos González</h3>
+                  <span class="text-xs text-noir-muted">Propietario · E.D.G. Construcción</span>
+                </div>
+              </div>
+              <p class="text-sm text-noir-muted font-light leading-relaxed">
+                Interlocutor directo y titular de la empresa. Responsable de la negociación comercial, presupuestación, coordinación logística y cumplimiento contractual de cada obra. Trato personal y transparente sin rodeos.
+              </p>
+            </div>
+
+            <div class="pt-6 border-t border-noir-border mt-8 flex flex-col gap-2">
+              <a href="tel:0981353858" class="text-xs text-white hover:underline flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm text-emerald-400">call</span>
+                <span>Tel / Cel: <strong class="text-white">(0981) 353 858</strong></span>
+              </a>
+              <a href="mailto:dabalozesteban@gmail.com" class="text-xs text-white hover:underline flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm text-emerald-400">mail</span>
+                <span>Email: <strong class="text-white">dabalozesteban@gmail.com</strong></span>
+              </a>
+              <div class="text-xs text-noir-muted flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm text-noir-muted">badge</span>
+                <span>RUC: 5348627-7</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUPERVISIÓN TÉCNICA: ING. CIVIL ARACELY BERICUA -->
+          <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between border-white/10">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="h-14 w-14 rounded-xl bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                  <span class="material-symbols-outlined text-3xl">engineering</span>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-emerald-400 font-bold">Supervisión Profesional de Obra</span>
+                  <h3 class="font-display text-2xl font-bold text-white">Ing. Civil Aracely Bericua</h3>
+                  <span class="text-xs text-noir-muted">Dirección Técnica &amp; Fiscalización</span>
+                </div>
+              </div>
+              <p class="text-sm text-noir-muted font-light leading-relaxed">
+                Supervisión de cada fase técnica de obra: fiscalización de dosificación de hormigones, verificación de armaduras, aplomos, anclajes de perfiles metálicos y control de calidad de materiales in situ para asegurar máxima seguridad.
+              </p>
+            </div>
+
+            <div class="pt-6 border-t border-noir-border mt-8 flex flex-col gap-2 text-xs text-noir-silver">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm text-emerald-400">check_circle</span>
+                <span>Control de cálculos y planos estructurales</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm text-emerald-400">check_circle</span>
+                <span>Inspección de soldaduras y vigas en tinglados</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm text-emerald-400">check_circle</span>
+                <span>Cumplimiento estricto de normas de seguridad</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COTIZADOR DIRECTO PARA EMPRESAS Y CLIENTES -->
+    <section class="py-24 border-b border-noir-border relative" id="empresa">
+      <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="glass-panel p-8 sm:p-12 rounded-2xl border-white/15">
+          
+          <div class="text-center mb-10">
+            <span class="text-xs uppercase tracking-[0.3em] text-noir-silver font-semibold">Atención Personalizada</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-1">
+              Solicitud de Presupuesto o Visita a Terreno
+            </h2>
+            <p class="text-xs sm:text-sm text-noir-muted mt-2 font-light">
+              Comunicate directamente con la dirección de E.D.G. Construcción para evaluar tu proyecto, pliego o memoria descriptiva.
+            </p>
+          </div>
+
+          <form onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-noir-silver mb-2 font-semibold">Nombre del Contacto o Empresa</label>
+                <input type="text" id="formName" required placeholder="Ej: Ing. Martínez o Logística Central SA" class="w-full bg-noir-900 border border-noir-border focus:border-white rounded-lg px-4 py-3 text-sm text-white placeholder-noir-muted/60 outline-none transition-colors" />
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-noir-silver mb-2 font-semibold">Teléfono / WhatsApp de Contacto</label>
+                <input type="tel" id="formPhone" required placeholder="Ej: (0981) 123 456" class="w-full bg-noir-900 border border-noir-border focus:border-white rounded-lg px-4 py-3 text-sm text-white placeholder-noir-muted/60 outline-none transition-colors" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-noir-silver mb-2 font-semibold">Tipo de Obra Requerida</label>
+                <select id="formType" class="w-full bg-noir-900 border border-noir-border focus:border-white rounded-lg px-4 py-3 text-sm text-white outline-none transition-colors">
+                  <option value="Tinglado o Nave Industrial">Tinglado / Nave Industrial de Acero</option>
+                  <option value="Obra Civil Pública o Licitación">Obra Civil Pública / Licitación</option>
+                  <option value="Construcción Privada o Comercial">Edificación Privada / Comercial</option>
+                  <option value="Piso Industrial de Hormigón">Piso Industrial / Pavimento</option>
+                  <option value="Refacción o Ampliación Mayor">Refacción o Ampliación Mayor</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-noir-silver mb-2 font-semibold">Superficie o Envergadura (m² aprox)</label>
+                <input type="text" id="formArea" placeholder="Ej: 400 m² o 1.500 m²" class="w-full bg-noir-900 border border-noir-border focus:border-white rounded-lg px-4 py-3 text-sm text-white placeholder-noir-muted/60 outline-none transition-colors" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-noir-silver mb-2 font-semibold">Ubicación y Breve Descripción de la Necesidad</label>
+              <textarea id="formDetails" rows="3" placeholder="Ubicación de la obra (ej: Fernando de la Mora, Villeta, Mariano Roque Alonso) y especificaciones principales..." class="w-full bg-noir-900 border border-noir-border focus:border-white rounded-lg px-4 py-3 text-sm text-white placeholder-noir-muted/60 outline-none transition-colors resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-lg bg-white text-black hover:bg-noir-silver font-display text-xs uppercase tracking-[0.16em] font-bold transition-all flex items-center justify-center gap-2 shadow-xl">
+              <span class="material-symbols-outlined text-base">chat</span>
+              <span>Enviar Consulta Directa a Esteban Dávalos (WhatsApp)</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="bg-noir-950 border-t border-noir-border text-noir-muted py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- LOGO CENTRADO EN FOOTER (GRANDE) -->
+      <div class="flex flex-col items-center text-center pb-12 mb-12 border-b border-noir-border">
+        <svg class="h-16 md:h-20 w-auto text-white logo-glow mb-3" viewBox="0 0 120 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <rect x="24" y="2" width="32" height="24" fill="currentColor" opacity="0.95" />
+          <rect x="46" y="8" width="46" height="30" fill="currentColor" opacity="0.85" />
+          <rect x="2" y="22" width="76" height="10" fill="currentColor" />
+          <rect x="6" y="32" width="20" height="20" fill="currentColor" />
+          <rect x="58" y="28" width="16" height="20" fill="none" stroke="currentColor" stroke-width="2" />
+          <line x1="66" y1="28" x2="66" y2="48" stroke="currentColor" stroke-width="1.5" />
+          <line x1="58" y1="38" x2="74" y2="38" stroke="currentColor" stroke-width="1.5" />
+          <path d="M68 36 H106 V44 H88 V54 H68 Z" fill="currentColor" />
+          <rect x="94" y="44" width="6" height="10" fill="currentColor" opacity="0.9" />
+        </svg>
+        <span class="font-serif tracking-[0.4em] text-2xl sm:text-3xl font-extrabold text-white leading-none">E . D . G</span>
+        <span class="text-[11px] sm:text-xs uppercase tracking-[0.6em] text-noir-silver font-semibold mt-1">CONSTRUCCIÓN</span>
+        <p class="text-xs text-noir-muted max-w-md mt-4 font-light">
+          Obras Civiles, Públicas, Privadas &amp; Estructuras Metálicas de Gran Porte en la República del Paraguay.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12 text-xs">
+        
+        <!-- Info Fiscal & Dirección -->
+        <div class="space-y-2">
+          <span class="text-xs uppercase tracking-widest text-white font-semibold block mb-3">Datos de la Empresa</span>
+          <p><strong class="text-white">Razón / Denominación:</strong> Esteban Dávalos González</p>
+          <p><strong class="text-white">Nombre de Fantasía:</strong> E.D.G. Construcción</p>
+          <p><strong class="text-white">RUC:</strong> 5348627-7</p>
+          <p><strong class="text-white">Dirección:</strong> 11 de Setiembre casi Isla Po'i</p>
+          <p class="text-noir-silver">Fernando de la Mora, Paraguay</p>
+        </div>
+
+        <!-- Contacto Directo -->
+        <div class="space-y-2">
+          <span class="text-xs uppercase tracking-widest text-white font-semibold block mb-3">Canales de Contacto</span>
+          <p>
+            <strong class="text-white">Teléfono / Celular:</strong><br/>
+            <a href="tel:0981353858" class="text-white hover:underline font-semibold text-sm">(0981) 353 858</a>
+          </p>
+          <p>
+            <strong class="text-white">Correo Electrónico:</strong><br/>
+            <a href="mailto:dabalozesteban@gmail.com" class="text-noir-silver hover:text-white">dabalozesteban@gmail.com</a>
+          </p>
+          <p class="pt-1">
+            <strong class="text-white">Atención:</strong> Lunes a Sábado de 07:00 a 18:00 hs.
+          </p>
+        </div>
+
+        <!-- Supervisión Técnica -->
+        <div class="space-y-2">
+          <span class="text-xs uppercase tracking-widest text-white font-semibold block mb-3">Supervisión y Ejecución</span>
+          <p><strong class="text-white">Dirección General:</strong> Esteban Dávalos González</p>
+          <p><strong class="text-white">Supervisión Técnica de Obra:</strong> Ing. Civil Aracely Bericua</p>
+          <p class="text-noir-muted leading-relaxed pt-2">
+            Fiscalización técnica permanente in situ de cálculo de estructuras, fundaciones y verificación de materiales.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-noir-border flex flex-col sm:flex-row items-center justify-between text-xs text-noir-muted gap-4">
+        <p>© 2026 E.D.G. Construcción · Esteban Dávalos González · Fernando de la Mora, Paraguay.</p>
+        <p>Todos los derechos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <div class="fixed bottom-6 right-6 z-40">
+    <a href="https://api.whatsapp.com/send?phone=595981353858&text=Hola%20Esteban%2C%20me%20comunico%20desde%20la%20web%20de%20E.D.G.%20Construcci%C3%B3n" target="_blank" class="flex items-center gap-2.5 px-5 py-3 rounded-full bg-white text-black hover:bg-noir-silver font-display text-xs uppercase tracking-wider font-bold shadow-[0_8px_30px_rgba(0,0,0,0.6)] transition-all hover:scale-105 border border-black/10">
+      <span class="material-symbols-outlined text-lg text-emerald-600">chat</span>
+      <span>WhatsApp Directo: (0981) 353 858</span>
+    </a>
+  </div>
+
+  <script>
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('formName').value;
+      const phone = document.getElementById('formPhone').value;
+      const type = document.getElementById('formType').value;
+      const area = document.getElementById('formArea').value;
+      const details = document.getElementById('formDetails').value;
+
+      const msg = 'Hola Esteban, solicito presupuesto para E.D.G. Construcción:%0A' +
+        '*Contacto:* ' + encodeURIComponent(name) + '%0A' +
+        '*Teléfono:* ' + encodeURIComponent(phone) + '%0A' +
+        '*Tipo de Obra:* ' + encodeURIComponent(type) + '%0A' +
+        '*Superficie/Envergadura:* ' + encodeURIComponent(area || 'A coordinar') + '%0A' +
+        '*Detalles:* ' + encodeURIComponent(details || 'Sin observaciones previas');
+
+      window.open('https://api.whatsapp.com/send?phone=595981353858&text=' + msg, '_blank');
+    }
+  </script>
+
+</body>
+</html>
