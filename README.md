@@ -1,6 +1,6 @@
 # E.D.G. Construcción — Corporate Landing & Portfolio
 
-Official website and digital portfolio for **E.D.G. Construcción**, a specialized Paraguayan general contracting and civil engineering firm based in Fernando de la Mora, Paraguay.
+Official website, digital portfolio and media archive for **E.D.G. Construcción**, a specialized Paraguayan general contracting and civil engineering firm based in Fernando de la Mora, Paraguay.
 
 ## Overview
 
@@ -25,28 +25,36 @@ Official website and digital portfolio for **E.D.G. Construcción**, a specializ
 ```
 edg-construccion/
 ├── assets/
-│   └── images/
-│       ├── hormetal_tabique.jpg
-│       ├── punto_farma_casetonado.jpg
-│       ├── villa_morra_obra.jpg
-│       ├── country_obra_gris.jpg
-│       ├── procrear_encofrados.jpg
-│       ├── sarraga_altura.jpg
-│       ├── campo_aguara.jpg
-│       └── logo_original.jpg
-├── index.html              # Main production page with relative asset paths
-├── index-standalone.html   # Standalone version with inlined assets for zero-dependency previews
-├── README.md               # Project documentation
+│   ├── images/                           # High-res clean images for production site
+│   │   ├── hormetal_tabique.jpg
+│   │   ├── punto_farma_casetonado.jpg
+│   │   ├── villa_morra_obra.jpg
+│   │   ├── country_obra_gris.jpg
+│   │   ├── procrear_encofrados.jpg
+│   │   ├── sarraga_altura.jpg
+│   │   ├── campo_aguara.jpg
+│   │   └── logo_original.jpg
+│   └── registro-obras/                   # Complete media archive (200+ raw photos & videos)
+│       ├── 01-punto-farma/               # Casetonado slab photos & videos
+│       ├── 02-hormetal/                  # Retaining wall photos & technical captures
+│       ├── 03-villa-morra/               # Scaffolding & structure videos & photos
+│       ├── 04-casas-country-molduras/    # 43 photos of country houses & cornices
+│       ├── 05-procrear-san-antonio-areco/# Formwork & staircase reinforcement
+│       ├── 06-edificio-sarraga/          # Multi-story tower photos & videos
+│       ├── 07-campo-aguara-lincoln/      # Cantilevered gallery & park photos
+│       └── 08-videos-y-tomas-adicionales/# Additional field takes & site videos
+├── index.html                            # Main production page with relative asset paths
+├── index-standalone.html                 # Standalone version with inlined assets
+├── README.md                             # Project documentation
 └── .gitignore
 ```
 
 ## Deployment & Hosting
 
 ### Option 1: GitHub Pages
-1. Push this repository to GitHub.
-2. Navigate to **Settings > Pages**.
-3. Under **Build and deployment**, select **Source: Deploy from a branch**.
-4. Choose the `main` branch and `/ (root)` directory, then click **Save**.
+1. In the repository settings, navigate to **Settings > Pages**.
+2. Under **Build and deployment**, select **Source: Deploy from a branch**.
+3. Choose the `main` branch and `/ (root)` directory, then click **Save**.
 
 ### Option 2: Local Preview
 Open `index.html` directly in any modern web browser or run:
