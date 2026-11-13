@@ -7,7 +7,7 @@ Official website, digital portfolio and media archive for **E.D.G. Construcción
 - **Firm:** E.D.G. Construcción
 - **General Director & Owner:** Esteban Dávalos González (RUC: `5348627-7`)
 - **Technical Supervision:** Ing. Civil Aracely Bericua
-- **Address:** 11 de Setiembre c/ Isla Po'i, Fernando de la Mora, Central, Paraguay
+- **Address:** 11 de Septiembre c/ Isla Po'i, Fernando de la Mora, Central, Paraguay
 - **Contact:** `+595 981 353 858` · `dabalozesteban@gmail.com`
 
 ## Featured Projects in Portfolio
